@@ -7,9 +7,10 @@ branding:
 runs:
   using: "composite"
   steps:
-  - run: |
+  - name: Alter compression configuration
+    shell: bash
+    run: |
       sudo git config --system core.compression 0
       sudo git config --system core.looseCompression 0
       sudo git config --system checkout.workers -1
       sudo git config --system pack.compression 0
-      
