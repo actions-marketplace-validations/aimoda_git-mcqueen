@@ -14,3 +14,6 @@ runs:
       sudo git config --system core.looseCompression 0
       sudo git config --system checkout.workers -1
       sudo git config --system pack.compression 0
+      sudo git config --system gc.auto 0
+      sudo git config --system pack.threads 0
+      sudo git config --system receive.autogc false
