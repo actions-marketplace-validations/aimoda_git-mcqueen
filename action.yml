@@ -1,5 +1,8 @@
 name: 'Disable Git Compression'
 description: 'Sets configurations, such as core.compression, to 0'
+branding:
+  icon: 'fast-forward'  
+  color: 'red'
 
 runs:
   using: "composite"
