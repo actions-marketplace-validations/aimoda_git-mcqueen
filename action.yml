@@ -7,7 +7,7 @@ branding:
 runs:
   using: "composite"
   steps:
-    shell: bash
+#    shell: bash
     run: |
       sudo git config --system core.compression 0
       sudo git config --system core.looseCompression 0
