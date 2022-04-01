@@ -1,0 +1,13 @@
+name: 'Disable Git Compression'
+description: 'Sets configurations, such as core.compression, to 0'
+
+runs:
+  using: "composite"
+  steps:
+    shell: bash
+    run: |
+      sudo git config --system core.compression 0
+      sudo git config --system core.looseCompression 0
+      sudo git config --system checkout.workers -1
+      sudo git config --system pack.compression 0
+      
